@@ -1,0 +1,25 @@
+/*APP COMPONENT'S PRIVATE STYLE SHEET*/
+
+h1{
+    margin-bottom: 0;
+}
+
+nav a{
+    padding: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+}
+
+nav a:last-of-type{
+    margin-right: 0;
+}
+
+nav a:hover{
+    color: white;
+    background-color: #42545C;
+}
