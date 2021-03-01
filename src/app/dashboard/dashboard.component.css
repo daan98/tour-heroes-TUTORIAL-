@@ -1,0 +1,46 @@
+/*Dashboard Component´s private CSS style sheet*/
+
+h2{
+    text-align: center;
+}
+
+.heroes-menu{
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+a{
+    text-decoration: none;
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 16px;
+    font-size: 19.2px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: 8px auto;
+    box-sizing: border-box;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+a:hover{
+    background-color: #000;
+}
+
+@media (min-width: 600px){
+    a{
+        box-sizing: content-box;
+        width: 18%;
+    }
+}

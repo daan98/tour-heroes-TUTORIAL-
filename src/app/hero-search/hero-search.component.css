@@ -1,0 +1,46 @@
+/*HERO-SEARCH COMPONENT'S PRIVATE CSS STYLE SHEET*/
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem 0 .5rem;
+}
+
+input{
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: auto 1px #336699; /* OUTLINE-STYLE, WIDTH AND COLOR */
+}
+
+li{
+    list-style-type: none;
+}
+
+.search-result li a{
+    text-decoration: none;
+    display:inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    color: black;
+    border: 1px solid grey;
+    border-top: none;
+    padding: .5rem;
+}
+
+.search-result li a:hover{
+    color: white;
+    background-color: #435A60;
+}
+
+.search-result{
+    margin-top: 0;
+    padding-left: 0;
+}

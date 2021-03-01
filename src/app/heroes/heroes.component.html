@@ -1,0 +1,23 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes"><!--BEFORE THE ROUTERLINK:  [class.selected]="hero === selectedHero" (click)="onSelect(hero)" -->
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge"> {{hero.id}} </span> {{hero.alterEgo}}
+        </a>
+
+        <button class="delete" title="Delete hero" (click)="delete(hero)">x</button>
+    </li>
+</ul>
+
+<div>
+    <label id="new-hero-name">Hero name: </label>
+    <input type="text" for="new-hero-name" #heroName/>
+
+    <label id="new-hero-last-name">Hero last-name: </label>
+    <input type="text" for="new-hero-last-name" #heroLastName/>
+
+    <label id="new-hero-alter-ego">Alter Ego: </label>
+    <input type="text" for="new-hero-alter-ego" #heroAlterEgo/>
+
+    <button class="add-button" (click)="add(heroName.value, heroLastName.value, heroAlterEgo.value); heroName.value = '' ">Add hero</button>
+</div>
